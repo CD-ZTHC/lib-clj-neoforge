@@ -13,5 +13,4 @@
     (println "hello from libclj!")
     (consts/set-event-bus! event-bus)
     (consts/set-mod-container! mod-container)
-    (e.player/register)
-    ))
+    (e.player/register)))

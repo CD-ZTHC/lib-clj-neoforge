@@ -1,0 +1,15 @@
+{:tasks
+ {:enter    (println "Running task:" (:name (current-task)))
+
+  fmt-check {:doc  "Check code formatting"
+             :task (shell "cljfmt" "check")}
+
+  fmt       {:doc  "Fix code formatting"
+             :task (shell "cljfmt" "fix")}
+
+  lint      {:doc  "Linting project's code"
+             :task (shell "clj-kondo" "--parallel" "--lint" "src/main/clojure")}
+
+  check     {:doc     "Run all code checks and tests"
+             :depends [fmt lint]}
+  }}

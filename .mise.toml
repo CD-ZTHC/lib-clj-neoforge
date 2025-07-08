@@ -1,0 +1,23 @@
+[tools]
+java = "oracle-graalvm-21"
+clojure = "1.12"
+babashka = "1.12"
+clj-kondo = "2025"
+cljfmt = "0.13"
+
+[alias]
+cljfmt = "asdf:https://github.com/b-social/asdf-cljfmt"
+
+[tasks.clean]
+run = "./gradlew clean"
+
+[tasks.build]
+depends = "clean"
+run = "./gradlew build"
+
+[tasks.test]
+depends = "build"
+run = "./gradlew runGameTestServer"
+
+[tasks.check]
+run = "bb check"

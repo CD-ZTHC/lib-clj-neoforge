@@ -12,6 +12,23 @@ If at any point you are missing libraries in your IDE, or you've run into proble
 run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
 {this does not affect your code} and then start the process again.
 
+Compile:
+============
+build:
+```bash 
+mise trust && mise build
+```
+
+test server:
+```bash 
+mise test
+```
+
+check and lint:
+```bash 
+mise check
+```
+
 Mapping Names:
 ============
 By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 

@@ -2,19 +2,18 @@
   (:require [net.zthc.bases.consts :as consts])
   (:import
     ;; 核心玩家事件
-    (net.minecraft.world.entity.player Player)
-    (net.neoforged.neoforge.event.entity.player
-      AttackEntityEvent
-      PlayerEvent$PlayerLoggedInEvent
-      PlayerEvent$PlayerLoggedOutEvent
-      PlayerEvent$PlayerRespawnEvent
-      PlayerEvent$PlayerChangedDimensionEvent
-      PlayerEvent$ItemCraftedEvent
-      PlayerInteractEvent$RightClickBlock
-      PlayerInteractEvent$LeftClickBlock
-      PlayerWakeUpEvent)
-    (net.neoforged.neoforge.event.entity.living LivingDeathEvent)))
-
+   (net.minecraft.world.entity.player Player)
+   (net.neoforged.neoforge.event.entity.player
+    AttackEntityEvent
+    PlayerEvent$PlayerLoggedInEvent
+    PlayerEvent$PlayerLoggedOutEvent
+    PlayerEvent$PlayerRespawnEvent
+    PlayerEvent$PlayerChangedDimensionEvent
+    PlayerEvent$ItemCraftedEvent
+    PlayerInteractEvent$RightClickBlock
+    PlayerInteractEvent$LeftClickBlock
+    PlayerWakeUpEvent)
+   (net.neoforged.neoforge.event.entity.living LivingDeathEvent)))
 
 (defn register
   "注册所有与玩家相关的核心事件。"
@@ -41,5 +40,4 @@
   (consts/register-event PlayerEvent$ItemCraftedEvent consts/on-player)
 
   ;; 世界交互事件
-  (consts/register-event PlayerWakeUpEvent consts/on-player)
-  )
+  (consts/register-event PlayerWakeUpEvent consts/on-player))

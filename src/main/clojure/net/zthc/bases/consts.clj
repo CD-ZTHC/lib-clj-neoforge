@@ -2,10 +2,10 @@
   (:require [clojure.string :as str]
             [net.zthc.bases.utils :as u])
   (:import
-    [java.util.function Consumer]
-    [net.neoforged.bus.api EventPriority IEventBus]
-    [net.neoforged.fml ModContainer]
-    (net.neoforged.neoforge.common NeoForge)))
+   [java.util.function Consumer]
+   [net.neoforged.bus.api IEventBus]
+   [net.neoforged.fml ModContainer]
+   (net.neoforged.neoforge.common NeoForge)))
 
 (def ^:private event-bus! (atom nil))
 (def ^:private mod-container! (atom nil))
