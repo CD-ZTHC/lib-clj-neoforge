@@ -1,0 +1,13 @@
+{
+  "itemGroup.libclj": "Example Mod Tab",
+  "block.libclj.example_block": "Example Block",
+  "item.libclj.example_item": "Example Item",
+
+  "libclj.configuration.title": "libclj Configs",
+  "libclj.configuration.section.libclj.common.toml": "libclj Configs",
+  "libclj.configuration.section.libclj.common.toml.title": "libclj Configs",
+  "libclj.configuration.items": "Item List",
+  "libclj.configuration.logDirtBlock": "Log Dirt Block",
+  "libclj.configuration.magicNumberIntroduction": "Magic Number Text",
+  "libclj.configuration.magicNumber": "Magic Number"
+}

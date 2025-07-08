@@ -1,0 +1,40 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+runs
+run-data
+
+repo
+/.clj-kondo/
+/.eclipse/
+/.github/
+/.gradle/
+/.idea/
+/.lsp/
+/.settings/
+/bin/
+/build/
+/runs/
+/.classpath
+/.gitattributes
+/.project
+.DS_Store
